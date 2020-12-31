@@ -13,7 +13,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
     }
     
-    @IBAction func hello(_ sender: Any) {
+    @IBAction func showAlert(_ sender: Any) {
         
         let alert = UIAlertController(title: "Hello", message: "My name is YangSSo", preferredStyle: .alert)
         
@@ -21,17 +21,6 @@ class ViewController: UIViewController {
         
         alert.addAction(action)
         present(alert, animated: true, completion: nil)
-    }
-    
-    @IBAction func hello2(_ sender: Any) {
-        
-        let alert = UIAlertController(title: "Hello2", message: "My name is Kim", preferredStyle: .alert)
-        
-        let action = UIAlertAction(title: "OK", style: .default, handler: nil)
-        
-        alert.addAction(action)
-        present(alert, animated: true, completion: nil)
-        
     }
 }
 
